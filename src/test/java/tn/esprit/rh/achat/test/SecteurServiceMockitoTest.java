@@ -1,4 +1,4 @@
-package tn.esprit.rh.achat.test;
+/*package tn.esprit.rh.achat.test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -98,3 +98,4 @@ public class SecteurServiceMockitoTest {
 
 	 }
 }
+*/

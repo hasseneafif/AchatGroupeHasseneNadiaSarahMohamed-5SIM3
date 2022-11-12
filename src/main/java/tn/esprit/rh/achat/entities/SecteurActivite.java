@@ -37,4 +37,5 @@ public class SecteurActivite implements Serializable{
 		this.codeSecteurActivite = codeSecteurActivite;
 		this.libelleSecteurActivite = libelleSecteurActivite;
 	}
+	
 }
