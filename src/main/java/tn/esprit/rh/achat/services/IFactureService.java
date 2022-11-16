@@ -1,16 +1,16 @@
 package tn.esprit.rh.achat.services;
 
-import tn.esprit.rh.achat.entities.Facture;
-
 import java.util.Date;
 import java.util.List;
+import tn.esprit.rh.achat.entities.Facture;
+import tn.esprit.rh.achat.dto.FactureDTO;
 
 public interface IFactureService {
 	List<Facture> retrieveAllFactures();
 
 	List<Facture> getFacturesByFournisseur(Long idFournisseur);
 
-	Facture addFacture(Facture f);
+	Facture addFacture(FactureDTO f);
 
 	void cancelFacture(Long id);
 
