@@ -44,7 +44,7 @@ import static org.mockito.Mockito.verify;
     public void testaddStock() {
         Mockito.when(stockRepository.save(Mockito.any(Stock.class))).thenReturn(s);
         assertNotNull(stockService.addStock(s));
-        //verify(stockRepository).save(s);
+        verify(stockRepository).save(s);
     }
 
     @Test
