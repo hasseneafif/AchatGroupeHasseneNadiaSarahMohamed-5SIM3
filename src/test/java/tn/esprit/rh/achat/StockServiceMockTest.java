@@ -19,7 +19,7 @@ import static org.mockito.Mockito.verify;
 
 
 @ExtendWith(MockitoExtension.class)
- class StockServiceMock {
+ class StockServiceMockTest {
 
     @InjectMocks
     StockServiceImpl stockService;
