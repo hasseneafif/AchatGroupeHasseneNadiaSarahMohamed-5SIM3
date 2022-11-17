@@ -1,4 +1,4 @@
-package tn.esprit.rh.achat.entities;
+package c;
 
 public enum CategorieFournisseur {
 ORDINAIRE,CONVENTIONNE
