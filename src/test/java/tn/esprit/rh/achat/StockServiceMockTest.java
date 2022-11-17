@@ -1,11 +1,13 @@
 package tn.esprit.rh.achat;
 
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 import tn.esprit.rh.achat.entities.Stock;
 import tn.esprit.rh.achat.repositories.StockRepository;
 import tn.esprit.rh.achat.services.StockServiceImpl;
@@ -18,12 +20,16 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
 
 
-@ExtendWith(MockitoExtension.class)
- public class StockServiceMockTest {
+@RunWith(MockitoJUnitRunner.class)
+public class StockServiceMockTest {
 
     @InjectMocks
     StockServiceImpl stockService;
-
+    
+    @Before
+    public void setup(){
+        MockitoAnnotations.initMocks(this); //without this you will get NPE
+    }
 
     @Mock
     StockRepository stockRepository;
@@ -44,7 +50,6 @@ import static org.mockito.Mockito.verify;
     public void testaddStock() {
         Mockito.when(stockRepository.save(Mockito.any(Stock.class))).thenReturn(s);
         assertNotNull(stockService.addStock(s));
-        verify(stockRepository).save(s);
     }
 
     @Test
