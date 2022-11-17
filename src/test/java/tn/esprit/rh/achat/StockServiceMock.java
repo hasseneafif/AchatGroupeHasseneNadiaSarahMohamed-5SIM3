@@ -1,4 +1,4 @@
-package tn.esprit.rh.achat.test;
+package tn.esprit.rh.achat;
 
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
