@@ -34,7 +34,7 @@ public class Fournisseur implements Serializable {
 	private String code;
 	private String libelle;
 	@Enumerated(EnumType.STRING)
-	private CategorieFournisseur  categorieFournisseur;
+	private c.CategorieFournisseur categorieFournisseur;
 	@OneToMany(mappedBy="fournisseur")
 	@JsonIgnore
 	private Set<Facture> factures;
