@@ -38,7 +38,7 @@ services:
 volumes:
   db:
   angular:
-      image: nadiyabelhaj/docker-angular
+      image: sarahby/docker-angular
       container_name: docker-angular
       ports:
         - 4200:80
