@@ -6,6 +6,7 @@ import tn.esprit.rh.achat.entities.Operateur;
 import tn.esprit.rh.achat.dto.FactureDTO;
 import tn.esprit.rh.achat.repositories.*;
 import tn.esprit.rh.achat.services.IFactureService;
+import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
-
+@Builder
 @Service
 @Slf4j
 @Transactional
