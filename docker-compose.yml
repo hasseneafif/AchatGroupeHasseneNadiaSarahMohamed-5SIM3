@@ -32,8 +32,8 @@ services:
       - .m2:/home/.m2
     stdin_open: true
     tty: true
-    angular:
-    image: issamdziri97/docker-angular
+  angular:
+    image: asma25/docker-angular
     container_name: docker-angular
     ports:
       - 4200:80
